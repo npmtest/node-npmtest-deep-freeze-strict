@@ -1,1 +1,40 @@
-{     "devDependencies": {         "deep-freeze-strict": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-deep-freeze-strict",     "homepage": "https://github.com/npmtest/node-npmtest-deep-freeze-strict",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-deep-freeze-strict.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "test coverage for [deep-freeze-strict (v1.1.1)](https://github.com/jsdf/deep-freeze) [![npm package](https://img.shields.io/npm/v/npmtest-deep-freeze-strict.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-deep-freeze-strict) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-deep-freeze-strict.svg)](https://travis-ci.org/npmtest/node-npmtest-deep-freeze-strict)",
+    "devDependencies": {
+        "deep-freeze-strict": "*",
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-deep-freeze-strict",
+    "keywords": [
+        "coverage",
+        "test",
+        "deep-freeze-strict"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_deep_freeze_strict.js",
+    "name": "npmtest-deep-freeze-strict",
+    "nameAlias": "npmtest_deep_freeze_strict",
+    "nameOriginal": "npmtest-deep-freeze-strict",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-deep-freeze-strict.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
