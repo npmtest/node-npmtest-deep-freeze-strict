@@ -1,4 +1,7 @@
-# test coverage for  [deep-freeze-strict (v1.1.1)](https://github.com/jsdf/deep-freeze)  [![npm package](https://img.shields.io/npm/v/npmtest-deep-freeze-strict.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-deep-freeze-strict) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-deep-freeze-strict.svg)](https://travis-ci.org/npmtest/node-npmtest-deep-freeze-strict)
+# npmtest-deep-freeze-strict
+
+#### basic test coverage for  [deep-freeze-strict (v1.1.1)](https://github.com/jsdf/deep-freeze)  [![npm package](https://img.shields.io/npm/v/npmtest-deep-freeze-strict.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-deep-freeze-strict) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-deep-freeze-strict.svg)](https://travis-ci.org/npmtest/node-npmtest-deep-freeze-strict)
+
 #### recursively Object.freeze() objects and functions, works in strict mode
 
 [![NPM](https://nodei.co/npm/deep-freeze-strict.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/deep-freeze-strict)
